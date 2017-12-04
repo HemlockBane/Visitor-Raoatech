@@ -1,0 +1,64 @@
+<ion-content padding>
+
+    <ion-item>
+      <img class="profile-image" src="{{data.imageURL}}" /> 
+    </ion-item>
+
+    <ion-item>
+      <h1>Welcome,</h1>
+      <!-- <p class="instr">Provide details to login</p> -->
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-label stacked>Phone number</ion-label>
+      <ion-input type="number" [(ngModel)]="phone"></ion-input>
+    </ion-item> -->
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-12 (click)="continue()">
+          <div class="image">
+            <img id="disp" src="assets/img/exist.png">
+          </div>
+        <p> Exisiting Visitor</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col  (click)="checkVisitor()">
+          <div class="image">
+            <img id="disp" src="assets/img/logout.png"><br>
+            <p text-wrap text-center>Sign Out Visitor</p>
+          </div>
+         
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ion-col  (click)="register()">
+        <div class="image">
+          <img id="disp" src="assets/img/create.png">
+        </div>
+        <p text-wrap>New Visitor</p>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  
+
+    <div class="btn">
+      <button ion-button icon-left outline (click)="admin()">
+        <ion-icon name="person"></ion-icon>
+        Go to Admin Page
+      </button>
+    </div>
+
+
+
+  
+  
+
+
+
+</ion-content>
+

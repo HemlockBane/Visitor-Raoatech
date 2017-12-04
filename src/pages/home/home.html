@@ -1,0 +1,38 @@
+
+<ion-content padding>
+  
+  <div class="logo">
+      <img src="assets/img/logo.png">
+  </div>  
+
+  <ion-list no-lines>
+    <ion-list-header>
+      <h2>Login as Administrator</h2>
+    </ion-list-header>
+    <ion-item>
+      <ion-input type="email" [(ngModel)]="email" placeholder="Email Address">   
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" [(ngModel)] = "password" placeholder="Password">     
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button full color="working" (click)="adminLogin(email, password)">Login</button>
+    </ion-item>
+
+    <p class="admin">Create Administrator account. <b (click)="signup()">Sign up</b></p>
+  </ion-list>
+
+
+
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <p style="text-align:center; font-size: 10px">Powered by Raoatech</p>
+  </ion-toolbar>
+</ion-footer>
