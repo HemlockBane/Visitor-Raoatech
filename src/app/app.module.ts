@@ -18,7 +18,9 @@ import { AuthProvider } from '../providers/auth/auth';
 import { VisitorProvider } from '../providers/visitor/visitor';
 import { AdminProvider } from '../providers/admin/admin';
 import { NetworkProvider } from '../providers/network/network';
+import { EmailComposer } from '@ionic-native/email-composer';
 import { Network } from '@ionic-native/network'
+import { EmailProvider } from '../providers/email/email';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { Network } from '@ionic-native/network'
     FileChooser,
     FilePath,
     NetworkProvider,
-    Network
+    Network,
+    EmailProvider,
   ]
 })
 export class AppModule {}
